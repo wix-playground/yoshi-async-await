@@ -4,6 +4,8 @@ import wixExpressCsrf from 'wix-express-csrf';
 import wixExpressRequireHttps from 'wix-express-require-https';
 import {readFileSync} from 'fs';
 
+import {factory} from './server-with-async';
+
 module.exports = (app, context) => {
   const config = context.config.load('yoshi-async-await');
   const templatePath = './src/index.ejs';
@@ -12,6 +14,8 @@ module.exports = (app, context) => {
 
   app.use(wixExpressCsrf());
   app.use(wixExpressRequireHttps);
+
+  app.get('/should-fail', factory().justDoIt);
 
   app.get('/', (req, res) => {
     const renderModel = getRenderModel(req);
