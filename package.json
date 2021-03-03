@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "axios": "~0.16.0",
-    "babel-preset-yoshi": "^2.4.0",
+    "@wix/babel-preset-yoshi": "^2.4.0",
     "ejs": "~2.5.0",
     "express": "~4.15.0",
     "i18next": "~8.4.0",
@@ -26,11 +26,11 @@
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-i18next": "~4.6.0",
-    "wix-axios-config": "latest",
-    "wix-bootstrap-ng": "latest",
-    "wix-express-csrf": "latest",
-    "wix-express-require-https": "latest",
-    "wix-run-mode": "latest"
+    "@wix/wix-axios-config": "latest",
+    "@wix/wix-bootstrap-ng": "latest",
+    "@wix/wix-express-csrf": "latest",
+    "@wix/wix-express-require-https": "latest",
+    "@wix/wix-run-mode": "latest"
   },
   "devDependencies": {
     "react-test-renderer": "~15.6.0",
@@ -40,9 +40,9 @@
     "jsdom": "~11.2.0",
     "jsdom-global": "~3.0.0",
     "puppeteer": "^1.1.0",
-    "wix-bootstrap-testkit": "latest",
-    "wix-config-emitter": "latest",
-    "yoshi": "^2.1.2"
+    "@wix/wix-bootstrap-testkit": "latest",
+    "@wix/wix-config-emitter": "latest",
+    "@wix/yoshi": "^2.1.2"
   },
   "yoshi": {
     "externals": {
